@@ -29,7 +29,9 @@ $(document).ready(function () {
             email: 'Por favor, digite seu email '
         },
         submitHandler: function(form){
-            console.log(form)
+            console.log(form);
+            atualizaTabela();
+            form.submit();
         },
         invalidHandler: function(evento, validator) {
             let camposIncorretos = validator.numberOfInvalids();
