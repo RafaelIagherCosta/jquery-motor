@@ -47,4 +47,12 @@ $(document).ready(function () {
             scrollTop: destino.offset().top
         }, 1000)
 })
-})
+$('form').submit(function(e) {
+    e.preventDefault(); 
+});
+});
+
+
+function atualizaTabela() {
+$('input').val(''); 
+}
